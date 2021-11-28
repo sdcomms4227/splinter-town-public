@@ -622,7 +622,7 @@ var app = (function () {
 
     const file$3 = "src\\components\\PostItem.svelte";
 
-    // (40:6) {#if image}
+    // (50:6) {#if image}
     function create_if_block(ctx) {
     	let div;
     	let a;
@@ -640,18 +640,18 @@ var app = (function () {
     			span = element("span");
     			picture = element("picture");
     			img = element("img");
-    			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[1])) attr_dev(img, "src", img_src_value);
+    			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[2])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*post*/ ctx[0].title);
-    			add_location(img, file$3, 44, 16, 1784);
+    			add_location(img, file$3, 54, 16, 2104);
     			attr_dev(picture, "class", "articles__feature-img");
-    			add_location(picture, file$3, 43, 14, 1727);
+    			add_location(picture, file$3, 53, 14, 2047);
     			attr_dev(span, "class", "articles__feature-img-container");
-    			add_location(span, file$3, 42, 12, 1665);
+    			add_location(span, file$3, 52, 12, 1985);
     			attr_dev(a, "class", "articles__link");
     			attr_dev(a, "href", a_href_value = "" + (baseUrl + /*post*/ ctx[0].url));
-    			add_location(a, file$3, 41, 10, 1598);
+    			add_location(a, file$3, 51, 10, 1918);
     			attr_dev(div, "class", "articles__content-block articles__content-block--img");
-    			add_location(div, file$3, 40, 8, 1520);
+    			add_location(div, file$3, 50, 8, 1840);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -678,7 +678,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(40:6) {#if image}",
+    		source: "(50:6) {#if image}",
     		ctx
     	});
 
@@ -733,7 +733,7 @@ var app = (function () {
     	let a4;
     	let t13;
     	let a4_href_value;
-    	let if_block = /*image*/ ctx[1] && create_if_block(ctx);
+    	let if_block = /*image*/ ctx[2] && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
@@ -775,59 +775,59 @@ var app = (function () {
     			t12 = space();
     			div5 = element("div");
     			a4 = element("a");
-    			t13 = text(/*body*/ ctx[2]);
+    			t13 = text(/*body*/ ctx[1]);
     			attr_dev(div0, "class", "Userpic");
     			set_style(div0, "background-image", "url(\"https://steemitimages.com/u/steemitdev/avatar/small\")");
-    			add_location(div0, file$3, 14, 12, 448);
+    			add_location(div0, file$3, 24, 12, 768);
     			attr_dev(a0, "class", "user__link");
     			attr_dev(a0, "href", a0_href_value = "" + (baseUrl + "/@" + /*post*/ ctx[0].author));
-    			add_location(a0, file$3, 13, 10, 380);
+    			add_location(a0, file$3, 23, 10, 700);
     			attr_dev(div1, "class", "user__col user__col--left");
-    			add_location(div1, file$3, 12, 8, 329);
+    			add_location(div1, file$3, 22, 8, 649);
     			attr_dev(a1, "href", a1_href_value = "" + (baseUrl + "/@" + /*post*/ ctx[0].author));
     			attr_dev(a1, "target", "_blank");
-    			add_location(a1, file$3, 21, 16, 830);
-    			add_location(strong, file$3, 20, 14, 804);
+    			add_location(a1, file$3, 31, 16, 1150);
+    			add_location(strong, file$3, 30, 14, 1124);
     			attr_dev(span0, "class", "author");
     			attr_dev(span0, "itemprop", "author");
     			attr_dev(span0, "itemscope", "");
     			attr_dev(span0, "itemtype", "http://schema.org/Person");
-    			add_location(span0, file$3, 19, 12, 700);
+    			add_location(span0, file$3, 29, 12, 1020);
     			attr_dev(span1, "class", "user__name");
-    			add_location(span1, file$3, 18, 10, 661);
+    			add_location(span1, file$3, 28, 10, 981);
     			attr_dev(a2, "href", a2_href_value = "" + (baseUrl + "/trending/" + /*post*/ ctx[0].parent_permlink));
-    			add_location(a2, file$3, 27, 12, 1038);
+    			add_location(a2, file$3, 37, 12, 1358);
     			attr_dev(span2, "class", "articles__tag-link");
-    			add_location(span2, file$3, 25, 10, 975);
-    			add_location(span3, file$3, 32, 14, 1250);
+    			add_location(span2, file$3, 35, 10, 1295);
+    			add_location(span3, file$3, 42, 14, 1570);
     			attr_dev(span4, "class", "updated");
-    			add_location(span4, file$3, 31, 12, 1212);
+    			add_location(span4, file$3, 41, 12, 1532);
     			attr_dev(span5, "class", "timestamp__time");
-    			add_location(span5, file$3, 30, 10, 1168);
+    			add_location(span5, file$3, 40, 10, 1488);
     			attr_dev(div2, "class", "user__col user__col--right");
-    			add_location(div2, file$3, 17, 8, 609);
+    			add_location(div2, file$3, 27, 8, 929);
     			attr_dev(div3, "class", "user");
-    			add_location(div3, file$3, 11, 6, 301);
+    			add_location(div3, file$3, 21, 6, 621);
     			attr_dev(div4, "class", "articles__summary-header");
-    			add_location(div4, file$3, 10, 4, 255);
-    			add_location(span6, file$3, 53, 12, 2090);
+    			add_location(div4, file$3, 20, 4, 575);
+    			add_location(span6, file$3, 63, 12, 2410);
     			attr_dev(a3, "href", a3_href_value = "" + (baseUrl + /*post*/ ctx[0].url));
-    			add_location(a3, file$3, 52, 10, 2046);
-    			attr_dev(h2, "class", "articles__h2 entry-title");
-    			add_location(h2, file$3, 51, 8, 1997);
+    			add_location(a3, file$3, 62, 10, 2366);
+    			attr_dev(h2, "class", "articles__h2 entry-title svelte-fk5t0");
+    			add_location(h2, file$3, 61, 8, 2317);
     			attr_dev(a4, "href", a4_href_value = "" + (baseUrl + /*post*/ ctx[0].url));
-    			add_location(a4, file$3, 57, 10, 2213);
+    			add_location(a4, file$3, 67, 10, 2533);
     			attr_dev(div5, "class", "PostSummary__body entry-content");
-    			add_location(div5, file$3, 56, 8, 2156);
+    			add_location(div5, file$3, 66, 8, 2476);
     			attr_dev(div6, "class", "articles__content-block articles__content-block--text");
-    			add_location(div6, file$3, 50, 6, 1920);
+    			add_location(div6, file$3, 60, 6, 2240);
     			attr_dev(div7, "class", "articles__content hentry with-image ");
     			attr_dev(div7, "itemscope", "");
     			attr_dev(div7, "itemtype", "http://schema.org/blogPost");
-    			add_location(div7, file$3, 38, 4, 1390);
+    			add_location(div7, file$3, 48, 4, 1710);
     			attr_dev(div8, "class", "articles__summary");
-    			add_location(div8, file$3, 9, 2, 218);
-    			add_location(li, file$3, 8, 0, 210);
+    			add_location(div8, file$3, 19, 2, 538);
+    			add_location(li, file$3, 18, 0, 530);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -891,12 +891,14 @@ var app = (function () {
     			}
 
     			if (dirty & /*post*/ 1 && t8_value !== (t8_value = new Date(/*post*/ ctx[0].created).toDateString() + "")) set_data_dev(t8, t8_value);
-    			if (/*image*/ ctx[1]) if_block.p(ctx, dirty);
+    			if (/*image*/ ctx[2]) if_block.p(ctx, dirty);
     			if (dirty & /*post*/ 1 && t11_value !== (t11_value = /*post*/ ctx[0].title + "")) set_data_dev(t11, t11_value);
 
     			if (dirty & /*post*/ 1 && a3_href_value !== (a3_href_value = "" + (baseUrl + /*post*/ ctx[0].url))) {
     				attr_dev(a3, "href", a3_href_value);
     			}
+
+    			if (dirty & /*body*/ 2) set_data_dev(t13, /*body*/ ctx[1]);
 
     			if (dirty & /*post*/ 1 && a4_href_value !== (a4_href_value = "" + (baseUrl + /*post*/ ctx[0].url))) {
     				attr_dev(a4, "href", a4_href_value);
@@ -929,7 +931,19 @@ var app = (function () {
     	let { post } = $$props;
     	const json = JSON.parse(post.json_metadata);
     	const image = json.image ? json.image[0] : "";
-    	const body = post.body;
+    	let body = post.body;
+
+    	if (json.image) {
+    		json.image.forEach(element => {
+    			const imgTitle = element.indexOf("Screenshot") > 0
+    			? element.substr(element.indexOf("Screenshot")).replaceAll("%20", " ")
+    			: "image.png";
+
+    			$$invalidate(1, body = body.replace(element, ""));
+    			$$invalidate(1, body = body.replace("![" + imgTitle + "]()", ""));
+    		});
+    	}
+
     	const writable_props = ['post'];
 
     	Object.keys($$props).forEach(key => {
@@ -944,13 +958,14 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ('post' in $$props) $$invalidate(0, post = $$props.post);
+    		if ('body' in $$props) $$invalidate(1, body = $$props.body);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [post, image, body];
+    	return [post, body, image];
     }
 
     class PostItem extends SvelteComponentDev {
